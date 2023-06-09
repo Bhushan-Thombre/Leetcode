@@ -1,21 +1,19 @@
 class Solution {
-    public int maxIndex(int[] nums) {
-        int max = 0;
+    public int dominantIndex(int[] nums) {
+        int max = -1;
+        int index = -1;
+        int secondMax = -1;
+
         for (int i = 0; i < nums.length; i++) {
-            if (nums[i] >= nums[max]) {
-                max = i;
+            if (nums[i] > max) {
+                secondMax = max;
+                max = nums[i];
+                index = i;
+            }else if (nums[i] > secondMax) {
+                secondMax = nums[i];
             }
         }
-        return max;
-    }
-    public int dominantIndex(int[] nums) {
-        int largestIndex = maxIndex(nums);
 
-        Arrays.sort(nums);
-        if (nums[nums.length - 1] >= 2 * nums[nums.length - 2]) {
-            return largestIndex;
-        }
-
-        return -1;
+        return max >= 2 * secondMax ? index : -1;
     }
 }
