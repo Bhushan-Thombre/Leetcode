@@ -3,19 +3,19 @@ class Solution {
         int n = grid.length;
         int count = 0;
 
-        for (int i = 0; i < n; i++) {
-            for (int j = 0; j < n; j++) {
-                boolean flag = true;
+        Map<String, Integer> row = new HashMap<>();
+        for (int[] arr: grid) {
+            String rowString = Arrays.toString(arr);
+            row.put(rowString, row.getOrDefault(rowString, 0) + 1);
+        }
 
-                for (int k = 0; k < n; k++) {
-                    if (grid[i][k] != grid[k][j]) {
-                        flag = false;
-                        break;
-                    }
-                }
-
-                count += flag ? 1 : 0;
+        for (int col = 0; col < n; col++) {
+            int[] colArray = new int[n];
+            for (int r = 0; r < n; r++) {
+                colArray[r] = grid[r][col];
             }
+
+            count += row.getOrDefault(Arrays.toString(colArray), 0);
         }
 
         return count;
