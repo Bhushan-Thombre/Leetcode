@@ -20,4 +20,16 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1877-find-followers-count](https://github.com/Bhushan-Thombre/Leetcode/tree/master/1877-find-followers-count) |
 | [2087-confirmation-rate](https://github.com/Bhushan-Thombre/Leetcode/tree/master/2087-confirmation-rate) |
 | [2495-number-of-unique-subjects-taught-by-each-teacher](https://github.com/Bhushan-Thombre/Leetcode/tree/master/2495-number-of-unique-subjects-taught-by-each-teacher) |
+## Hash Table
+|  |
+| ------- |
+| [0202-happy-number](https://github.com/Bhushan-Thombre/Leetcode/tree/master/0202-happy-number) |
+## Math
+|  |
+| ------- |
+| [0202-happy-number](https://github.com/Bhushan-Thombre/Leetcode/tree/master/0202-happy-number) |
+## Two Pointers
+|  |
+| ------- |
+| [0202-happy-number](https://github.com/Bhushan-Thombre/Leetcode/tree/master/0202-happy-number) |
 <!---LeetCode Topics End-->
